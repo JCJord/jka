@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+    <link rel="stylesheet" href="css/form.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header></header>
+    <section class="wrapper">
+      <div class="form-container">
+        <div class="logo">
+          <img src="images/logo.svg" alt="logo" />
+
+          <h3>Seja bem vindo a JK !</h3>
+
+          <p>
+            Vamos ajudar você a encontrar uma solução para seu problema
+            financeiro.
+          </p>
+        </div>
+
+        <div class="contact-form">
+          <form action="insert.php" method="POST" id="formulario">
+            <div class="input-box">
+              <h2>Seu nome completo :</h2>
+              <input
+                type="text"
+                name="FirstName"
+                required="required"
+                maxlength="40"
+              />
+            </div>
+            <div class="input-box">
+              <h2>Seu Telefone para contato :</h2>
+              <input
+                type="text"
+                name="Phone"
+                id="telefone"
+                required="required"
+              />
+            </div>
+            <script type="text/javascript">
+              $("#telefone").mask("(00)00000-0000");
+            </script>
+
+            <div class="input-box">
+              <h2>Digite seu CPF :</h2>
+              <input type="text" name="cpf" id="cpf" required="required" />
+            </div>
+            <script type="text/javascript">
+              $("#cpf").mask("000.000.000-00");
+            </script>
+            <div class="input-box">
+              <h2>Seu E-mail para contato :</h2>
+              <input
+                type="email"
+                name="email"
+                required="required"
+                maxlength="40"
+              />
+            </div>
+            <div class="input-box">
+              <h2>Deixe uma observação:</h2>
+              <textarea
+                required="required"
+                name="obs"
+                maxlength="150"
+              ></textarea>
+            </div>
+
+            <div class="input-box">
+              <input type="submit" name="btn" class="btn" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

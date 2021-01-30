@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "MuseoMordeno", cursive;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+header {
+  width: 100%;
+  height: 130px;
+  background-color: #12e888;
+}
+
+.form-container {
+  position: relative;
+  background-color: #fff;
+  text-align: center;
+  width: 500px;
+  -webkit-box-shadow: 0 0 10px #000001;
+          box-shadow: 0 0 10px #000001;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  bottom: 70px;
+}
+
+.contact-form {
+  width: 100%;
+}
+
+.contact-form h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.contact-form .input-box {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contact-form input {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contact-form .input-box input {
+  width: 70%;
+  padding: 5px 0;
+  margin: 5px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #6e6e6e;
+  resize: none;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.contact-form .input-box input:focus {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  border-bottom: 1px solid #08d679;
+}
+
+.contact-form .input-box textarea {
+  width: 70%;
+  padding: 5px 0;
+  margin: 5px;
+  height: 100px;
+  outline: none;
+  resize: none;
+}
+
+.contact-form .input-box input[type="submit"] {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #08d679;
+  color: #fff;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 5px #000001;
+          box-shadow: 0 0 5px #000001;
+}
+
+.contact-form .input-box input[type="submit"]:hover {
+  background-color: #00b362;
+}
+
+.logo p,
+h3 {
+  margin-top: 7px;
+}
+
+.logo p {
+  margin-bottom: 10px;
+}
+
+.logo img {
+  width: 300px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 529px) {
+  .form-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #fff;
+    z-index: 0;
+  }
+}
+/*# sourceMappingURL=form.css.map */
